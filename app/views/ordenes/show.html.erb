@@ -15,5 +15,13 @@
   <%= @ordene.fecha %>
 </p>
 
-<%= link_to 'Edit', edit_ordene_path(@ordene) %> |
-<%= link_to 'Back', ordenes_path %>
+<p>
+  <strong>Producto:</strong>
+  <%= @ordene.producto_id %>
+</p>
+
+<button type="button" class="btn btn-default"><%= link_to 'Regresar', ordenes_path %></button>
+
+<button type="button" class="btn btn-default"><%= link_to 'Editar',  edit_ordene_path(@ordene) %> </button>
+
+

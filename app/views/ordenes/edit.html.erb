@@ -1,6 +1,8 @@
-<h1>Editing Ordene</h1>
+<h1>Editar Ordenes</h1>
 
 <%= render 'form', ordene: @ordene %>
 
-<%= link_to 'Show', @ordene %> |
-<%= link_to 'Back', ordenes_path %>
+<button type="button" class="btn btn-default"><%= link_to 'Visualizar', @ordene %> </button>
+
+<button type="button" class="btn btn-default"><%= link_to 'Regresar', ordenes_path %> </button>
+

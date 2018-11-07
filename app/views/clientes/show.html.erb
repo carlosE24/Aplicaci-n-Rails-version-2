@@ -10,5 +10,6 @@
   <%= @cliente.rfc %>
 </p>
 
-<%= link_to 'Edit', edit_cliente_path(@cliente) %> |
-<%= link_to 'Back', clientes_path %>
+<button type="button" class="btn btn-default"><%= link_to 'Regresar', clientes_path %></button>
+
+<button type="button" class="btn btn-default"><%= link_to 'Editar', edit_cliente_path(@cliente) %> </button>

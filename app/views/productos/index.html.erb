@@ -2,7 +2,7 @@
 
 <h1>Productos</h1>
 
-<table>
+<table class="table table-striped table-bordered table-hover">
   <thead>
     <tr>
       <th>Nombre productos</th>
@@ -16,14 +16,13 @@
       <tr>
         <td><%= producto.nombre_productos %></td>
         <td><%= producto.precio %></td>
-        <td><%= link_to 'Show', producto %></td>
-        <td><%= link_to 'Edit', edit_producto_path(producto) %></td>
-        <td><%= link_to 'Destroy', producto, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Visualizar', producto %></td>
+        <td><%= link_to 'Editar', edit_producto_path(producto) %></td>
+        <td><%= link_to 'Eliminar', producto, method: :delete, data: { confirm: 'Seguro de eliminar?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
 <br>
-
-<%= link_to 'New Producto', new_producto_path %>
+<button type="button" class="btn btn_primary btn_lg btn_block"><%= link_to 'Nuevo Producto', new_producto_path %> </button>
